@@ -38,7 +38,7 @@ st.markdown(
 )
 
 with st.sidebar:
-    uploaded_file = 'C:\Users\Energy Sustainbality.pdf'
+    uploaded_file = 'C:/Users/Energy Sustainbality.pdf'
     temp_r = st.slider("Temperature", 0.1, 0.9, 0.3, 0.1)
     chunksize = st.slider("Chunk Size for Splitting Document ", 256, 1024, 300, 10)
     clear_button = st.button("Clear Conversation", key="clear")
@@ -76,7 +76,7 @@ def PDF_loader(document):
     )
     return "Ready"
 
-PDF_loader("C:\Users\Energy Sustainbality.pdf")
+PDF_loader("C:/Users/Energy Sustainbality.pdf")
 st.markdown(
 "<h3 style='text-align: center;'>Hello i am MOLLY an Eco-Friendly instructor bot "
 + "</h3>",

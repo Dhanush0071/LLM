@@ -15,13 +15,17 @@ from langchain.llms import Cohere
 if not os.path.exists("./tempfolder"):
     os.makedirs("./tempfolder")
 
-uploadedfile= !wget https://github.com/Dhanush0071/LLM/blob/main/Energy%20Sustainbality.pdf
+#uploadedfile= !wget https://github.com/Dhanush0071/LLM/blob/main/Energy%20Sustainbality.pdf
 
- with open(
-        os.path.join("tempfolder", uploadedfile.name),
-        "wb",
-    ) as f:
-        f.write(uploadedfile.getbuffer())
+wget.download("https://github.com/Dhanush0071/LLM/blob/main/Energy%20Sustainbality.pdf",os.path.join("tempfolder", uploadedfile.name),"wb",))
+
+    
+    
+#  with open(
+#         os.path.join("tempfolder", uploadedfile.name),
+#         "wb",
+#     ) as f:
+#         f.write(uploadedfile.getbuffer())
 
 st.set_page_config(page_title="key to sustainable living", page_icon=":tree:")
 

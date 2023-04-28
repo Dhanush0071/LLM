@@ -7,6 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1rjH0hY8Hx2QwW-yJ082pqD5NZJ_SAbVW
 """
 
+import wget
 import requests
 import webbrowser
 import io
@@ -24,7 +25,7 @@ from langchain.llms import Cohere
 
 from IPython.display import clear_output
 
-!wget https://store3.gofile.io/download/9443c187-9766-4bf9-8a77-4cbf45d1a9bf/Energy%20Sustainbality.pdf
+wget.download("https://store3.gofile.io/download/9443c187-9766-4bf9-8a77-4cbf45d1a9bf/Energy%20Sustainbality.pdf",'C:\Users\Energy Sustainbality.pdf')
 
 st.set_page_config(page_title="key to sustainable living", page_icon=":tree:")
 
@@ -36,7 +37,7 @@ st.markdown(
 )
 
 with st.sidebar:
-    uploaded_file = '/content/Energy Sustainbality.pdf'
+    uploaded_file = 'C:\Users\Energy Sustainbality.pdf'
     temp_r = st.slider("Temperature", 0.1, 0.9, 0.3, 0.1)
     chunksize = st.slider("Chunk Size for Splitting Document ", 256, 1024, 300, 10)
     clear_button = st.button("Clear Conversation", key="clear")
@@ -74,7 +75,7 @@ def PDF_loader(document):
     )
     return "Ready"
 
-PDF_loader("/content/Energy Sustainbality.pdf")
+PDF_loader("C:\Users\Energy Sustainbality.pdf")
 st.markdown(
 "<h3 style='text-align: center;'>Hello i am MOLLY an Eco-Friendly instructor bot "
 + "</h3>",

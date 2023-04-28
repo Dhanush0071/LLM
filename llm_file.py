@@ -14,7 +14,7 @@ from langchain.llms import Cohere
 
 # wget.download("https://github.com/Dhanush0071/LLM/blob/main/Energy%20Sustainbality.pdf",'Energy_Sustainbality.pdf')
 
-
+st.title("𓃰 𓃵 𓃝 𓃒")
 st.set_page_config(page_title="key to sustainable living", page_icon=":tree:",layout="wide")
 
 st.markdown(

@@ -7,11 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1rjH0hY8Hx2QwW-yJ082pqD5NZJ_SAbVW
 """
 
-import requests
-import webbrowser
-import io
-import PyPDF2
-import os
 import streamlit as st
 from streamlit_chat import message
 from langchain.document_loaders import OnlinePDFLoader

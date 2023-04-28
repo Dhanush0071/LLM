@@ -8,3 +8,4 @@ streamlit-chat
 cohere
 pexpect
 wget
+streamlit_themes

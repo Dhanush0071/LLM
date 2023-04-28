@@ -17,8 +17,6 @@ from langchain.embeddings import CohereEmbeddings
 from langchain.prompts import PromptTemplate
 from langchain.llms import Cohere
 
-from IPython.display import clear_output
-
 wget.download("https://github.com/Dhanush0071/LLM/blob/main/Energy%20Sustainbality.pdf", 'C:/Users/Energy Sustainbality.pdf')
 
 

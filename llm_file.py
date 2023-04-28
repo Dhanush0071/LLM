@@ -23,8 +23,6 @@ wget.download("https://github.com/Dhanush0071/LLM/blob/main/Energy%20Sustainbali
 
 st.set_page_config(page_title="key to sustainable living", page_icon=":tree:")
 
-tab1= st.tabs("📈 Talk Here")
-
 st.markdown(
     "<h1 style='text-align: center;'>LETS LEAD AN ECO-FRIENDLY LIFE</h1>",
     unsafe_allow_html=True,

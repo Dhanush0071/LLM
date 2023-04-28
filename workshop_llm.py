@@ -7,6 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1NQqBm8lZqM2GuP2lrpRhc-OtgKcBDxFd
 """
 
+import pexpect
 import os
 import streamlit as st
 from streamlit_chat import message

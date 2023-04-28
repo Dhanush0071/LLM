@@ -17,7 +17,7 @@ if not os.path.exists("./tempfolder"):
 
 #uploadedfile= !wget https://github.com/Dhanush0071/LLM/blob/main/Energy%20Sustainbality.pdf
 
-wget.download("https://github.com/Dhanush0071/LLM/blob/main/Energy%20Sustainbality.pdf",os.path.join("tempfolder", uploadedfile.name),"wb",))
+wget.download("https://github.com/Dhanush0071/LLM/blob/main/Energy%20Sustainbality.pdf",os.path.join("tempfolder", "Energy Sustainbality.pdf"))
 
     
     

@@ -50,7 +50,7 @@ def PDF_loader(document):
     global qa
     qa = RetrievalQA.from_chain_type(
         llm=Cohere(
-            model="GPT-3",
+            model="command-xlarge-nightly",
             temperature=temp_r,
             cohere_api_key="vLuTQVcIyLBLbb5UqNJb4sFitqv1D2g8mriKoFoi",
         ),

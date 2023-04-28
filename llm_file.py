@@ -3,7 +3,6 @@
 import os
 import wget
 import streamlit as st
-import streamlit_themes as stt
 from streamlit_chat import message
 from langchain.document_loaders import OnlinePDFLoader
 from langchain.text_splitter import CharacterTextSplitter

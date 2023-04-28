@@ -7,7 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1rjH0hY8Hx2QwW-yJ082pqD5NZJ_SAbVW
 """
 
-import wget
 import requests
 import webbrowser
 import io

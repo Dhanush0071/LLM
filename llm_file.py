@@ -15,7 +15,7 @@ from langchain.llms import Cohere
 # wget.download("https://github.com/Dhanush0071/LLM/blob/main/Energy%20Sustainbality.pdf",'Energy_Sustainbality.pdf')
 
 
-st.set_page_config(page_title="key to sustainable living", page_icon=":tree:")
+st.set_page_config(page_title="key to sustainable living", page_icon=":tree:",layout="wide")
 
 st.markdown(
     "<h1 style='text-align: center;'>LETS LEAD AN ECO-FRIENDLY LIFE</h1>",

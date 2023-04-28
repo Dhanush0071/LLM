@@ -25,7 +25,8 @@ from langchain.llms import Cohere
 
 from IPython.display import clear_output
 
-wget.download("https://github.com/Dhanush0071/LLM/blob/main/Energy%20Sustainbality.pdf",'C:\Users\Energy Sustainbality.pdf')
+wget.download("https://github.com/Dhanush0071/LLM/blob/main/Energy%20Sustainbality.pdf", 'C:/Users/Energy Sustainbality.pdf')
+
 
 st.set_page_config(page_title="key to sustainable living", page_icon=":tree:")
 

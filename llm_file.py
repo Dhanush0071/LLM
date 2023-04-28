@@ -19,7 +19,6 @@ from langchain.llms import Cohere
 
 wget.download("https://github.com/Dhanush0071/LLM/blob/main/Energy%20Sustainbality.pdf", 'C:/Users/Energy Sustainbality.pdf')
 
-
 st.set_page_config(page_title="key to sustainable living", page_icon=":tree:")
 
 tab1= st.tabs("📈 Talk Here")

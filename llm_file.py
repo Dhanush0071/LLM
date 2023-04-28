@@ -76,7 +76,7 @@ if "past" not in st.session_state:
 
 def generate_response(query):
     result = qa({"query": query, "chat_history": st.session_state["chat_history"]})
-    return result
+    return result["result"]
 
 response_container = st.container()
 container = st.container()

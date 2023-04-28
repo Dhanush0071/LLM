@@ -6,3 +6,4 @@ gradio
 streamlit
 streamlit-chat
 cohere
+pexpect

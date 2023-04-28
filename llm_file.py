@@ -12,20 +12,8 @@ from langchain.embeddings import CohereEmbeddings
 from langchain.prompts import PromptTemplate
 from langchain.llms import Cohere
 
-if not os.path.exists("./tempfolder"):
-    os.makedirs("./tempfolder")
+wget.download("https://github.com/Dhanush0071/LLM/blob/main/Energy%20Sustainbality.pdf",'C:/Users/Energy Sustainbality.pdf')
 
-#uploadedfile= !wget https://github.com/Dhanush0071/LLM/blob/main/Energy%20Sustainbality.pdf
-
-wget.download("https://github.com/Dhanush0071/LLM/blob/main/Energy%20Sustainbality.pdf",os.path.join("tempfolder", "Energy Sustainbality.pdf"))
-
-    
-    
-#  with open(
-#         os.path.join("tempfolder", uploadedfile.name),
-#         "wb",
-#     ) as f:
-#         f.write(uploadedfile.getbuffer())
 
 st.set_page_config(page_title="key to sustainable living", page_icon=":tree:")
 

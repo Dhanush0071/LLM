@@ -3,6 +3,7 @@
 import os
 import wget
 import streamlit as st
+import streamlit_themes as stt
 from streamlit_chat import message
 from langchain.document_loaders import OnlinePDFLoader
 from langchain.text_splitter import CharacterTextSplitter
@@ -15,6 +16,7 @@ from langchain.llms import Cohere
 # wget.download("https://github.com/Dhanush0071/LLM/blob/main/Energy%20Sustainbality.pdf",'Energy_Sustainbality.pdf')
 
 
+stt.set_theme('sky')
 st.set_page_config(page_title="key to sustainable living", page_icon=":tree:")
 
 st.markdown(

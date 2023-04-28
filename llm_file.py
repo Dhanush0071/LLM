@@ -12,7 +12,7 @@ from langchain.embeddings import CohereEmbeddings
 from langchain.prompts import PromptTemplate
 from langchain.llms import Cohere
 
-wget.download("https://github.com/Dhanush0071/LLM/blob/main/Energy%20Sustainbality.pdf",'C:/Users/Energy Sustainbality.pdf')
+wget.download("https://github.com/Dhanush0071/LLM/blob/main/Energy%20Sustainbality.pdf",'Energy_Sustainbality.pdf')
 
 
 st.set_page_config(page_title="key to sustainable living", page_icon=":tree:")
@@ -23,7 +23,7 @@ st.markdown(
 )
 
 with st.sidebar:
-    uploaded_file = 'C:/Users/Energy Sustainbality.pdf'
+    uploaded_file = 'Energy_Sustainbality.pdf'
     temp_r = st.slider("Temperature", 0.1, 0.9, 0.3, 0.1)
     chunksize = st.slider("Chunk Size for Splitting Document ", 256, 1024, 300, 10)
     clear_button = st.button("Clear Conversation", key="clear")
@@ -61,7 +61,7 @@ def PDF_loader(document):
     )
     return "Ready"
 
-PDF_loader("C:/Users/Energy Sustainbality.pdf")
+PDF_loader("Energy_Sustainbality.pdf")
 st.markdown(
 "<h3 style='text-align: center;'>Hello i am MOLLY an Eco-Friendly instructor bot "
 + "</h3>",

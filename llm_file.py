@@ -36,6 +36,8 @@ def PDF_loader(document):
     documents = loader.load()
     prompt_template = """
     your are MOLLY an AI chat bot , you should provide tips on sustaiable and eco friendly life
+    {context}
+    {question}
     """
     PROMPT = PromptTemplate(
         template=prompt_template, input_variables=["context", "question"]

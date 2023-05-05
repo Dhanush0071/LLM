@@ -34,7 +34,6 @@ st.set_page_config(page_title="key to sustainable living", page_icon=":tree:",la
 
 st.markdown(
     page_bg_img,
-    "<h1 style='text-align: center;'>LETS LEAD AN ECO-FRIENDLY LIFE</h1>",
     unsafe_allow_html=True,
 )
 

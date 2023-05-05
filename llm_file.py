@@ -14,10 +14,26 @@ from langchain.llms import Cohere
 
 # wget.download("https://github.com/Dhanush0071/LLM/blob/main/Energy%20Sustainbality.pdf",'Energy_Sustainbality.pdf')
 
+page_bg_img=""" 
+<style>
+[data-testid="stAppViewContainer"]{
+background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapersden.com%2Fsmall-town-hd-aesthetic-cool-art-wallpaper%2F1920x1080%2F&psig=AOvVaw37b6xxcrGnBIDs3KICbfVD&ust=1683346669520000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPC08ZWp3f4CFQAAAAAdAAAAABAE");
+background-size:cover;
+}
+[data-testid="stHeader"]
+{
+background-color :rgba(0,0,0,0);
+}
+[data-testid="stToolbar]{
+right :2rem;
+}
+</style>
+"""
 
 st.set_page_config(page_title="key to sustainable living", page_icon=":tree:",layout="wide")
 
 st.markdown(
+    page_bg_img,
     "<h1 style='text-align: center;'>LETS LEAD AN ECO-FRIENDLY LIFE</h1>",
     unsafe_allow_html=True,
 )

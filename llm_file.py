@@ -18,7 +18,6 @@ from langchain.llms import Cohere
 page_bg_img = '''
 <style>
 body {
-background-image: url("https://images.wallpapersden.com/image/download/small-town-hd-aesthetic-cool-art_bWdqa22UmZqaraWkpJRmbmdlrWZlbWU.jpg");
 background-size: cover;
 }
 </style>

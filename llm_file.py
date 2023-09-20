@@ -15,26 +15,14 @@ from langchain.llms import Cohere
 # wget.download("https://github.com/Dhanush0071/LLM/blob/main/Energy%20Sustainbality.pdf",'Energy_Sustainbality.pdf')
 
 
-page_bg_img = '''
-<style>
-body {
-background-size: cover;
-}
-</style>
-'''
-
-
-
 st.set_page_config(page_title="key to sustainable living", page_icon=":tree:",layout="wide")
-
-st.markdown(page_bg_img, unsafe_allow_html=True)
 
 st.markdown(
     "<h1 style='text-align: center;'>LETS LEAD AN ECO-FRIENDLY LIFE</h1>",
     unsafe_allow_html=True,
 )
 
-st.title("𓃰 𓃵 𓃝 𓃒")
+
 uploaded_file = 'Energy_Sustainbality.pdf'
 temp_r = 0.6
 chunksize = 306
@@ -46,8 +34,8 @@ embeddings = CohereEmbeddings(model="large", cohere_api_key="QWDz8FkbBKC0w5RT5JJ
 def PDF_loader(document):
     loader = OnlinePDFLoader(document)
     documents = loader.load()
-    prompt_template = """
-    you are a AI  chat bot MOLLY , you have to suggest users the ways to reduce pollution and carbon foot print in their daily life and also give some suggestions about waste management. if the user greets you greet him/her back with a warm welcome and also molly if user asks about yourself , introduce yourself to them by telling what you can do, before you answer read the context and the PDF uploaded and the answer has to relevant to the question, do not answer something irrelevant to the question
+    prompt_template = """ 
+   you are a AI  chat bot MOLLY , you have to suggest users the ways to reduce pollution and carbon foot print in their daily life and also give some suggestions about waste management. if the user greets you greet him/her back with a warm welcome and also molly if user asks about yourself , introduce yourself to them by telling what you can do, before you answer read the context and the PDF uploaded and the answer has to relevant to the question, do not answer something irrelevant to the question
     question:hello
     answer:hey there  this is molly how can i help you 
     question:say me something 

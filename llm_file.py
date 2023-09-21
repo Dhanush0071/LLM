@@ -21,7 +21,7 @@ chunksize = 306
 clear_button = st.button("Clear Conversation", key="clear")
 
 text_splitter = CharacterTextSplitter(chunk_size=chunksize, chunk_overlap=10)
-embeddings = CohereEmbeddings(model="large", cohere_api_key="QWDz8FkbBKC0w5RT5JJSWrULkejn3N2JKht1j3zP")
+embeddings = CohereEmbeddings(model="large", cohere_api_key="cxsjS7z3Yz5mGRaou68BTKHqBLhBFRqslJ5ulWMh")
 
 def PDF_loader(document):
     loader = OnlinePDFLoader(document)
@@ -50,7 +50,7 @@ def PDF_loader(document):
         llm=Cohere(
             model="command-xlarge-nightly",
             temperature=temp_r,
-            cohere_api_key="QWDz8FkbBKC0w5RT5JJSWrULkejn3N2JKht1j3zP",
+            cohere_api_key="cxsjS7z3Yz5mGRaou68BTKHqBLhBFRqslJ5ulWMh",
         ),
         chain_type="stuff",
         retriever=retriever,

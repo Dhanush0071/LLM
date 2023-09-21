@@ -13,22 +13,6 @@ from langchain.llms import Cohere
 main_bg = "susdev.jpg"
 
 st.set_page_config(page_title="key to sustainable living", page_icon=":tree:", layout="wide")
-def add_bg_from_url():
-    st.markdown(
-         f"""
-         <style>
-         .stApp {{
-             background-image: url("https://media.istockphoto.com/id/935827452/vector/nature-background-template-paper-art-style.jpg?s=612x612&w=0&k=20&c=aIlg6Sf_Fn70M1QhIPwSyphE9Igam4DAK92ekcQnS9E=");
-             background-attachment: fixed;
-             #background-size: cover
-         }}
-         </style>
-         """,
-         unsafe_allow_html=True
-     )
-
-add_bg_from_url() 
-
 
 st.title("𓃰 𓃵 𓃝 𓃒")
 uploaded_file = 'Energy_Sustainbality.pdf'

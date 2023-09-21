@@ -1,7 +1,5 @@
-# -*- coding: utf-8 -*-
-
 import os
-import wget
+import base64
 import streamlit as st
 from streamlit_chat import message
 from langchain.document_loaders import OnlinePDFLoader
@@ -12,17 +10,27 @@ from langchain.embeddings import CohereEmbeddings
 from langchain.prompts import PromptTemplate
 from langchain.llms import Cohere
 
-# wget.download("https://github.com/Dhanush0071/LLM/blob/main/Energy%20Sustainbality.pdf",'Energy_Sustainbality.pdf')
+main_bg = "susdev.jpg"
+
+st.set_page_config(page_title="key to sustainable living", page_icon=":tree:", layout="wide")
+def add_bg_from_url():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://media.istockphoto.com/id/935827452/vector/nature-background-template-paper-art-style.jpg?s=612x612&w=0&k=20&c=aIlg6Sf_Fn70M1QhIPwSyphE9Igam4DAK92ekcQnS9E=");
+             background-attachment: fixed;
+             #background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+
+add_bg_from_url() 
 
 
-st.set_page_config(page_title="key to sustainable living", page_icon=":tree:",layout="wide")
-
-st.markdown(
-    "<h1 style='text-align: center;'>LETS LEAD AN ECO-FRIENDLY LIFE</h1>",
-    unsafe_allow_html=True,
-)
-
-
+st.title("𓃰 𓃵 𓃝 𓃒")
 uploaded_file = 'Energy_Sustainbality.pdf'
 temp_r = 0.6
 chunksize = 306

@@ -1,4 +1,5 @@
 chromadb
+chroma
 langchain
 unstructured
 unstructured[local-inference]

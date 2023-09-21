@@ -1,5 +1,5 @@
 chromadb
-pysqlite3-binary 
+pysqlite3 
 langchain
 unstructured
 unstructured[local-inference]

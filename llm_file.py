@@ -1,7 +1,7 @@
-import sqlite3
-__import__('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+# import sqlite3
+# __import__('pysqlite3')
+# import sys
+# sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 import os
 import base64
@@ -22,7 +22,7 @@ st.set_page_config(page_title="key to sustainable living", page_icon=":tree:", l
 st.title("𓃰 𓃵 𓃝 𓃒")
 uploaded_file = 'Energy_Sustainbality.pdf'
 temp_r = 0.6
-chunksize = 306
+chunksize = 600
 clear_button = st.button("Clear Conversation", key="clear")
 
 text_splitter = CharacterTextSplitter(chunk_size=chunksize, chunk_overlap=10)
